@@ -1,60 +1,168 @@
-.carousel-caption h5 {
-  font-size: 2.5vh;
-  font-weight: 800;
-  text-shadow: 1px 1px 2px black;
+@font-face {
+  font-family: Aniron;
+  src: url(fonts/anirm___.ttf);
 }
 
-.carousel-caption {
-  font-size: 2.5vh;
-  font-weight: 300;
-  text-shadow: 1px 1px 2px black;
+@font-face {
+  font-family: party;
+  src: url(fonts/partybusiness.ttf);
 }
 
-.carousel-item {
-   height: 40vh;
+@font-face {
+  font-family: sigle;
+  src: url(fonts/tngani.ttf);
 }
 
-.btn-primary {
-	margin: 10px 0;
+h6.mt-0, p.mt-0 {
+  font-family: "party";
+  font-size: 2.5em;
+  color: orange;
 }
 
-.image-carousel{
-	background-image: cover;
-}
-
-.frodon {
-	width: 140px;
-}
-
-.profile {
-width: 80px
-}
-
-.jumbotron {
-	padding: 1em;
-}
-
-.rounded-circle {
-	width: 110px;
+p.mt-0 {
+  font-family: "party";
+  font-size: 1.5em;
+  color: black;
 }
 
 .container-fluid {
-	padding-left: 5px;
-	padding-right: 5px;
+  padding: 0;
+  margin: 0;
 }
 
-div .blue {
-	border: 2px solid blue;
+div.jumbotron.jumbotron-fluid {
+  margin: 0;
 }
 
-.footer {
-	background-color: gray;
-	color: white;
-	text-decoration: none;
+img.align-self-center.mr-3.profile {
+  width: 140px;
+
 }
 
-.footer a {
-	color: white;
+
+.jumbotron {
+  background-image: url(images/bg_light.png);
+  margin:0;
+
+}
+
+#getmyreward, .getmyreward, .aboutring {
+  background-image: url(images/bg_dark.png);
+}
+
+
+.navbar {
+  background-color: #fe6614;
+}
+
+.nav-item a, li {
+  color: #fff9da;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff9da;
+}
+
+.titre {
+  font-family: "Aniron"
+
+}
+
+span.titre {
+  font-size: 1.5rem;
+}
+
+div.card-body {
+  background-color: black;
+  color: gray;
+  font-family: "party"
+}
+
+.carousel-caption {
+  font-family: "party";
+  text-align: left;
+  top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+}
+
+.carousel-caption h5 {
+  font-size: 5.5rem;
+}
+
+.carousel-caption p {
+  font-size: 3.5rem;
+}
+
+
+#navbarNav {
+  justify-content: right;
+}
+
+span.carousel-control-prev-icon, span.carousel-control-next-icon  {
+  width: 60px;
+  height: 60px;
+}
+
+.sigle {
+  font-family: "sigle";
+  color: orange;
+}
+
+.btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: gray;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+a.btn.btn-primary.titre.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: orange;
+  font-size: 1.5rem;
+  margin: 15px 0;
+    text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: orange;
+  font-size: 1.5rem;
+  margin: 15px 0;
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+.card-title {
+  font-size: 3rem;
+}
+
+.card {
+  margin: 0 20px;
+  border: 8px solid black;
+}
+
+.media-body, h4.titre {
+  color: white;
+}
+
+.frodon {
+  width: 140px;
+}
+
+.sauron-coin {
+  width: 140px;
+}
+
+.contactus {
+  background-color: white;
+  font-family: "Aniron";
+  color: orange;
 }
 
 /* CSS ANIMATION GANDALF */
@@ -69,8 +177,9 @@ div .blue {
 
 .gandalf-anim {
   width:100%;
-  opacity:0.4;
+  opacity:0.7;
   transition: 0.3s;
+  filter: brightness(65%);
 }
 
 .player {
@@ -80,41 +189,42 @@ div .blue {
   transform: translate(-50%, -50%);
   color: white;
   z-index:3;
-  font-size:30px;
-  font-family: arial;
+  font-size: 3vmax;
   font-weight: 300;
+  font-family: "Aniron"
 }
 
 aside {
   position: absolute;
   width:80%;
-  height: 30%;
+  height: 25%;
   top: 4%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius:10px;  
   padding: 5px;
   display: flex;
   flex-direction: column;
   z-index:1;
   margin-left: 10%;
-
 }
 
 aside p {
-  font-family: arial;
   margin: auto;
-  font-size: 1.25em;
+  font-size: 2.5vmax;
+  font-family: "party"
 }
+
+
 
 aside span {
   color: #ff7b00;
-  font-family: arial;
 }
 
 .gandalf-anim:hover {
   position: relative;
   opacity:1;
   z-index:1;
+   filter: brightness(100%);
 }
 
 .animation-gandalf:hover .player {
@@ -125,7 +235,63 @@ aside span {
   color: white;
   z-index:2;
   font-size:2vh;
-  font-family: arial;
   font-weight: 300;
   transition: 0.3s;
 }
+
+strike {
+  color: orange;  
+}
+
+
+.player-gimli {
+  color: white;
+
+}
+
+.gimli-img {
+  filter: brightness(50%);
+}
+
+.reward-gimli {
+  position: absolute;
+  width:80%;
+  height: 30%;
+  top: 4%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  z-index:1;
+  margin-left: 10%;
+  background-color: transparent;
+}
+
+aside .dead-gimli {
+  margin: auto;
+  font-size: 5vmax;
+  font-family: "party";
+  color: orange;
+}
+
+
+/* taille de la police vignette gandalf pour petit écrant */
+
+@media screen and (max-width: 576px) {
+	aside p {
+	  margin: auto;
+	  font-size: 7vw;
+	}
+
+
+	.player {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  color: white;
+	  z-index:3;
+	  font-size: 8vw;
+	  font-weight: 300;
+	}
+}
+
